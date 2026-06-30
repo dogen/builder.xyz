@@ -44,8 +44,8 @@ jobs:
         run: npm ci
       - name: Install Quartz plugins
         run: npx quartz plugin install
-      - name: Build Quartz
-        run: npx quartz build
+      - name: Build site
+        run: chmod +x build.sh && ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
