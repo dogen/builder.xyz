@@ -8,17 +8,22 @@ tags: ["links", "interesting"]
 
 Things I've found compelling enough to save.
 
-## YouTube Talks
+## YouTube rabbit holes
 
-<!-- Embed or link talks here -->
+<!--  -->
 
 ## Articles & Links
 
-<!-- Link blog style entries -->
+<!-- [Writing Good Prompts](https://andymatuschak.org/prompts/) by Andy Matuschak 
+[Neuromancer] (https://plasticlabs.ai/neuromancer)
+[Billion Dollar PDFs](https://billiondollarpdf.com/) by Laurie Owen -->
 
 ## Podcasts
 
-<!-- Podcast episodes worth revisiting -->
+<!-- [Indy Johar on Accidental Gods](https://accidentalgods.life/becoming-intentional-gods-claiming-the-future-with-indy-johar-of-the-dark-matter-labs/)
+[This Jungian Life](https://thisjungianlife.com/76-animus-anima/)
+
+-->
 
 ---
 

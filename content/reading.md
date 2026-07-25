@@ -6,15 +6,19 @@ tags: ["reading", "books"]
 
 # Reading
 
-What I'm currently reading and recent finishes.
 
 ## Currently Reading
 
-<!-- Add your current reads here -->
+<!-- "The Sickness of Life Unto Death" Soren Kierkegaard
+"Bird By Bird" Anne Lamott 
+
+-->
 
 ## Recently Finished
 
-<!-- Add completed reads here -->
+<!-- "[The Agony of Eros](https://www.goodreads.com/book/show/34848070-the-agony-of-eros) by Byung-Chul Han" 
+"[The Transparency Society](https://www.goodreads.com/book/show/21937018-la-sociedad-de-la-transparencia)" by Byung-Chul Han
+-->
 
 ## On the List
 

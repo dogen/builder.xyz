@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Austin Fay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+/* ===========================================================
+   Austin Fay — personal site
+   Theme: Warm + neon (Austin F prototype + extended neon)
+   =========================================================== */
+
+:root {
+  --space: 1;
+  --bg:      #100f0d;
+  --ink:     #ece9e2;
+  --ink-2:   rgba(236,233,226,.62);
+  --ink-3:   rgba(236,233,226,.40);
+  --rule:    rgba(236,233,226,.12);
+  --hair:    rgba(236,233,226,.08);
+
+  /* Neon palette */
+  --neon-y:  #d7ff1e;
+  --neon-c:  #1fd6ff;
+  --neon-g:  #2bff66;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans:  "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --mono:  "Space Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a { color: var(--neon-c); text-decoration: none; }
+a:hover { color: var(--neon-y); }
+
+.shell {
+  display: grid;
+  grid-template-columns: 248px minmax(0, 1fr);
+  max-width: 1080px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  padding: calc(64px * var(--space)) 0 40px calc(40px * var(--space));
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+.brand .tag {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--neon-g);
+  margin-top: 9px;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(9px * var(--space));
+  margin-top: calc(34px * var(--space));
+}
+.navlinks a {
+  display: flex;
+  gap: 11px;
+  align-items: baseline;
+  font-size: 14.5px;
+  color: var(--ink-2);
+  transition: color .15s;
+}
+.navlinks a .ix {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--neon-c);
+  transition: color .15s;
+}
+.navlinks a:hover { color: var(--neon-y); }
+.navlinks a:hover .ix { color: var(--neon-y); }
+.navlinks a.active { color: var(--neon-g); }
+.navlinks a.active .ix { color: var(--neon-c); }
+
+.nav .foot {
+  margin-top: auto;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--neon-c);
+  padding-top: 28px;
+  opacity: 0.7;
+}
+
+.content {
+  padding: calc(64px * var(--space)) calc(64px * var(--space)) calc(96px * var(--space)) calc(40px * var(--space));
+  max-width: 640px;
+}
+
+.page-no {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--neon-c);
+  margin-bottom: calc(20px * var(--space));
+}
+
+.portrait-wrap { margin-bottom: calc(34px * var(--space)); }
+img.portrait {
+  width: 226px;
+  height: 282px;
+  object-fit: cover;
+  border: 1px solid var(--neon-c);
+  display: block;
+  filter: grayscale(1) contrast(1.02);
+}
+
+.lead {
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.46;
+  margin: 0 0 calc(18px * var(--space));
+  text-wrap: pretty;
+  color: var(--ink);
+}
+.lead em, .lead i { color: var(--neon-g); font-style: italic; }
+.lead strong, .lead b { color: var(--neon-y); font-weight: 600; }
+
+.prose p {
+  margin: 0 0 calc(15px * var(--space));
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--ink);
+}
+.prose a {
+  color: var(--neon-c);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(31, 214, 255, 0.3);
+  transition: text-decoration-color .15s, color .15s;
+}
+.prose a:hover { color: var(--neon-y); text-decoration-color: var(--neon-y); }
+
+.sec {
+  display: flex;
+  gap: 11px;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neon-c);
+  margin: calc(46px * var(--space)) 0 calc(18px * var(--space));
+  padding-top: calc(16px * var(--space));
+  border-top: 1px solid rgba(31, 214, 255, 0.25);
+}
+
+.list { display: flex; flex-direction: column; gap: calc(14px * var(--space)); }
+.item { display: block; }
+.item .row {
+  display: flex;
+  gap: 11px;
+  align-items: baseline;
+}
+.item .arr { font-family: var(--mono); font-size: 12px; color: var(--neon-c); flex: 0 0 auto; transition: color .15s; }
+.item .name {
+  font-family: var(--serif);
+  font-size: 18.5px;
+  line-height: 1.32;
+  color: var(--ink);
+}
+.item .name .by { font-family: var(--sans); font-size: 14px; color: var(--neon-g); }
+.item .desc {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 5px 0 0 23px;
+  text-wrap: pretty;
+}
+.item:hover .arr { color: var(--neon-y); }
+.item.linky:hover .name { color: var(--neon-c); text-decoration: underline; text-underline-offset: 3px; }
+
+.inf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(5px * var(--space)) 30px;
+}
+.inf .row { font-size: 14.5px; line-height: 1.5; color: var(--ink); }
+.inf .row::before { content: "→ "; color: var(--neon-c); font-family: var(--mono); }
+
+/* ---------- Section neon tints ---------- */
+.sxn-1 { --neon: #d7ff1e; }
+.sxn-2 { --neon: #1fd6ff; }
+.sxn-3 { --neon: #2bff66; }
+
+.sxn .lead,
+.sxn .prose p,
+.sxn .sec,
+.sxn .sec .ix,
+.sxn .item .name,
+.sxn .item .arr,
+.sxn .inf .row { color: var(--neon); }
+
+.sxn .item .name .by { color: var(--neon); opacity: .7; }
+.sxn .sec { border-top-color: color-mix(in srgb, var(--neon) 32%, transparent); }
+.sxn .item.linky:hover .name { text-decoration-color: var(--neon); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .shell { grid-template-columns: 1fr; max-width: 560px; }
+  .nav { position: static; height: auto; padding: 40px 28px 0; }
+  .navlinks { flex-direction: row; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; }
+  .nav .foot { display: none; }
+  .content { padding: 36px 28px 72px; }
+  .inf { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <nav class="nav">
+    <a class="brand" href="/pro/">Austin&nbsp;Fay<span class="tag">tinkerer · builder</span></a>
+    <div class="navlinks">
+      <a href="/pro/about.html" class="active"><span class="ix">01</span><span>About</span></a>
+      <a href="/pro/projects.html"><span class="ix">02</span><span>Projects</span></a>
+      <a href="/pro/reading.html"><span class="ix">03</span><span>Reading</span></a>
+      <a href="/pro/contact.html"><span class="ix">04</span><span>Contact</span></a>
+      <a href="/pro/" style="margin-top: 12px; font-size: 12px; color: var(--neon-c);">← Work</a>
+    </div>
+    <div class="foot">© 2026</div>
+  </nav>
+
+  <main class="content">
+    <div class="page-no">01 — About</div>
+
+    <div class="portrait-wrap">
+      <img class="portrait" src="/pro/portrait.png" alt="Austin Fay">
+    </div>
+
+    <section class="sxn sxn-1">
+      <p class="lead">Austin is a tinkerer and builder interested in the <em>future of American Energy</em> and <em>how humans make decisions</em>.</p>
+    </section>
+
+    <section class="sxn sxn-2">
+      <div class="sec"><span class="ix">·</span><span>Current focus</span></div>
+      <div class="prose">
+        <p>Building tools for royalty owners, maintaining infrastructure, and tinkering with whatever catches curiosity.</p>
+      </div>
+    </section>
+
+    <section class="sxn sxn-3">
+      <div class="sec"><span class="ix">·</span><span>Influences</span></div>
+      <div class="inf">
+        <div class="row">Systems thinking</div>
+        <div class="row">Pragmatic design</div>
+        <div class="row">Tool-making</div>
+        <div class="row">Clear writing</div>
+        <div class="row">Iterative process</div>
+        <div class="row">Working software</div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

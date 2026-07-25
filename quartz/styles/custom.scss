@@ -1,3 +1,183 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ─── Neon palette ────────────────────────────────────────────────────────────
+:root {
+  --neon-y:  #5a6e00;
+  --neon-c:  #0a6b8a;
+  --neon-g:  #1a6e3a;
+}
+
+:root[saved-theme="dark"] {
+  --neon-y:  #d7ff1e;
+  --neon-c:  #1fd6ff;
+  --neon-g:  #2bff66;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([saved-theme="light"]) {
+    --neon-y:  #d7ff1e;
+    --neon-c:  #1fd6ff;
+    --neon-g:  #2bff66;
+  }
+}
+
+// ─── Typography ──────────────────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+}
+
+h1 { color: var(--neon-y); font-size: 2rem; letter-spacing: -0.01em; }
+h2 {
+  color: var(--neon-c);
+  font-size: 1.35rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--neon-c) 28%, transparent);
+  margin-top: 2.5rem;
+}
+h3 { color: var(--neon-g); font-size: 1.15rem; }
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+.center a,
+article a {
+  color: var(--neon-c);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--neon-c) 35%, transparent);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: var(--neon-y);
+    text-decoration-color: var(--neon-y);
+  }
+}
+
+// ─── Horizontal rule → neon section divider ──────────────────────────────────
+hr {
+  border: none;
+  border-top: 1px solid color-mix(in srgb, var(--neon-c) 28%, transparent);
+  margin: 2.5rem 0;
+}
+
+// ─── Blockquotes ─────────────────────────────────────────────────────────────
+blockquote {
+  border-left: 2px solid var(--neon-g);
+  background: color-mix(in srgb, var(--neon-g) 6%, transparent);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+
+  p { color: var(--darkgray); font-style: italic; }
+}
+
+// ─── Inline code ─────────────────────────────────────────────────────────────
+code:not(pre code) {
+  font-family: "Space Mono", monospace;
+  font-size: 0.82em;
+  color: var(--neon-g);
+  background: color-mix(in srgb, var(--neon-g) 10%, transparent);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+// ─── Page header ─────────────────────────────────────────────────────────────
+.article-title h1 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  color: var(--neon-y);
+  letter-spacing: -0.01em;
+}
+
+// ─── Content meta (date, tags) ───────────────────────────────────────────────
+.content-meta {
+  font-family: "Space Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--neon-c);
+  opacity: 0.75;
+}
+
+// ─── Tags ────────────────────────────────────────────────────────────────────
+.tag-link, a.tag {
+  font-family: "Space Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--neon-c) !important;
+  border: 1px solid color-mix(in srgb, var(--neon-c) 35%, transparent);
+  border-radius: 3px;
+  padding: 0.15em 0.5em;
+  text-decoration: none !important;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    color: var(--neon-y) !important;
+    border-color: var(--neon-y);
+  }
+}
+
+// ─── Left sidebar / explorer ─────────────────────────────────────────────────
+.left {
+  .page-title a {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+  }
+
+  .explorer-content {
+    font-size: 0.875rem;
+
+    .folder-title, .folder-outer > .folder-container > .folder-entry {
+      color: var(--darkgray);
+    }
+
+    a { color: var(--darkgray); text-decoration: none; }
+    a:hover { color: var(--neon-c); }
+  }
+}
+
+// ─── Right sidebar (backlinks, toc) ──────────────────────────────────────────
+.right {
+  font-size: 0.85rem;
+
+  h3 {
+    font-family: "Space Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--neon-c);
+    border-top: 1px solid color-mix(in srgb, var(--neon-c) 28%, transparent);
+    padding-top: 0.75rem;
+    margin-top: 1.5rem;
+    // override the h3 green from above
+    color: var(--neon-c) !important;
+  }
+
+  a { color: var(--darkgray); text-decoration: none; }
+  a:hover { color: var(--neon-c); }
+}
+
+// ─── Graph node colors ───────────────────────────────────────────────────────
+.graph-outer .graph-container {
+  --graph-node:    var(--neon-c);
+  --graph-link:    color-mix(in srgb, var(--neon-c) 30%, transparent);
+  --graph-current: var(--neon-y);
+}
+
+// ─── Search ──────────────────────────────────────────────────────────────────
+#search-bar {
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+footer {
+  font-family: "Space Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--neon-c);
+  opacity: 0.6;
+  border-top: 1px solid color-mix(in srgb, var(--neon-c) 20%, transparent);
+}

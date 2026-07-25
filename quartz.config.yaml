@@ -15,30 +15,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: "Schibsted Grotesk"
-      body: "Source Sans Pro"
-      code: "IBM Plex Mono"
+      header: "Newsreader"
+      body: "Hanken Grotesk"
+      code: "Space Mono"
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#faf8f4"
+        lightgray: "#ede9e0"
+        gray: "#9a9080"
+        darkgray: "#4a4236"
+        dark: "#1a1713"
+        secondary: "#0a6b8a"
+        tertiary: "#5a6e00"
+        highlight: "rgba(10, 107, 138, 0.1)"
+        textHighlight: "rgba(90, 110, 0, 0.2)"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#100f0d"
+        lightgray: "#1e1c1a"
+        gray: "#4a4845"
+        darkgray: "#9a9793"
+        dark: "#ece9e2"
+        secondary: "#1fd6ff"
+        tertiary: "#d7ff1e"
+        highlight: "rgba(31, 214, 255, 0.1)"
+        textHighlight: "rgba(215, 255, 30, 0.25)"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
