@@ -6,7 +6,7 @@ configuration:
   analytics:
     provider: "none"
   locale: en-US
-  baseUrl: "builder.xyz"
+  baseUrl: "dogen.github.io/builder.xyz"
   ignorePatterns:
     - private
     - templates

@@ -15,7 +15,7 @@ Things I've found compelling enough to save.
 ## Articles & Links
 
 <!-- [Writing Good Prompts](https://andymatuschak.org/prompts/) by Andy Matuschak 
-[Neuromancer] (https://plasticlabs.ai/neuromancer)
+[Neuromancer](https://plasticlabs.ai/neuromancer)
 [Billion Dollar PDFs](https://billiondollarpdf.com/) by Laurie Owen -->
 
 ## Podcasts

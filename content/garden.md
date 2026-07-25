@@ -24,9 +24,9 @@ I'm an autodidact by nature. Current obsessions:
 - **Raspberry Pi** — Homelab, automation, learning Arch Linux the hard way
 - **Cybersecurity** — Distributed compute, the rise of the police state 
 - **Robotics** — Building my own [avian visitors collage](https://theodore.net/projects/AvianVisitors/) 
-- **Earthen building** — Adobe, rammed earth. Low-tech, [high-skill construction]()
+- **Earthen building** — Adobe, rammed earth. Low-tech, [high-skill construction](https://www.architecturaldigest.com/gallery/tour-a-dreamy-marfa-compound-with-unending-views-of-the-texan-sky)
 - **Two-stroke engines** — Over-built small engines, dirt bikes. Currently on a top-end rebuild on a 1983 XR200 on my porch right now
-- **Mezcal** — The good stuff. Not the tourist bottle. 10-day motorcycle trip in spring of 2025, explored lots of palenques. 6-day Oaxacan through-hike called[ Camino Copalita](https://www.caminocopalita.com/english) through pueblos Zapotecos. 
+- **Mezcal** — The good stuff. Not the tourist bottle. 10-day motorcycle trip in spring of 2025, explored lots of palenques. 6-day Oaxacan through-hike called [Camino Copalita](https://www.caminocopalita.com/english) through pueblos Zapotecos.
 - **Financial markets** — Commodities, energy, how money moves through the systems I work in
 
 ---
