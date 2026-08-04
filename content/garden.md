@@ -15,14 +15,13 @@ Not the professional side. This is the raspberry pi, the two-stroke engines, the
 - **[[reading]]** — Books, articles, papers I'm reading or have finished
 - **[[interesting]]** — Links, talks, videos, things that caught my attention
 - **[[projects]]** — Raspberry pi experiments, coding projects, whatever I'm building
-- **[[notes]]** — Misc thoughts and mental scratchpad
 
 ## About Me (This Side)
 
 I'm an autodidact by nature. Current obsessions:
 
 - **Raspberry Pi** — Homelab, automation, learning Arch Linux the hard way
-- **Cybersecurity** — Distributed compute, the rise of the police state 
+- **Cybersecurity** — Distributed compute, the rise of the American police state 
 - **Robotics** — Building my own [avian visitors collage](https://theodore.net/projects/AvianVisitors/) 
 - **Earthen building** — Adobe, rammed earth. Low-tech, [high-skill construction](https://www.architecturaldigest.com/gallery/tour-a-dreamy-marfa-compound-with-unending-views-of-the-texan-sky)
 - **Two-stroke engines** — Over-built small engines, dirt bikes. Currently on a top-end rebuild on a 1983 XR200 on my porch right now
@@ -31,4 +30,4 @@ I'm an autodidact by nature. Current obsessions:
 
 ---
 
-<small>This is the personal side. [[/pro/|Professional side here]].</small>
+<small>This is the personal side. [[professional|Professional side here]].</small>
