@@ -30,4 +30,4 @@ I'm an autodidact by nature. Current obsessions:
 
 ---
 
-<small>This is the personal side. [[professional|Professional side here]].</small>
+<small>This is the personal side. <a href="pro/">Professional side here</a>.</small>
