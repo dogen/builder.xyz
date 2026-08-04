@@ -3,31 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>builder.xyz</title>
+  <title>dogen.builder.xyz</title>
+  <meta name="description" content="Austin Fay — professional work in oil and gas, and The Workshop, a personal digital garden.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="landing.css">
 </head>
 <body>
   <main>
     <div class="container">
-      <h1 class="site-title">builder.xyz</h1>
-      <p class="tagline">Two sides of the same coin</p>
+      <h1 class="site-title">dogen.builder.xyz</h1>
+      <p class="tagline">Select Professional or Personal</p>
 
       <div class="split">
         <a href="pro/" class="panel panel--pro">
           <span class="panel__label">Professional</span>
           <span class="panel__title">Austin Fay</span>
-          <span class="panel__desc">Division Order Analyst · Oil & Gas · Financial Markets</span>
-          <span class="panel__arrow">→</span>
+          <span class="panel__desc">Division Order Analyst · Oil &amp; Gas · Financial Markets</span>
+          <span class="panel__arrow" aria-hidden="true">→</span>
         </a>
 
         <a href="garden.html" class="panel panel--personal">
           <span class="panel__label">Personal</span>
           <span class="panel__title">The Workshop</span>
           <span class="panel__desc">Reading · Tinkering · Mezcal · Two-strokes</span>
-          <span class="panel__arrow">→</span>
+          <span class="panel__arrow" aria-hidden="true">→</span>
         </a>
       </div>
     </div>
   </main>
+
+  <script>
+    // Progressive enhancement: the panel glow follows the pointer.
+    // Without JS the glow still renders from its default corner on hover.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      for (const panel of document.querySelectorAll('.panel')) {
+        panel.addEventListener('pointermove', (e) => {
+          const r = panel.getBoundingClientRect();
+          panel.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
+          panel.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+        });
+        panel.addEventListener('pointerleave', () => {
+          panel.style.removeProperty('--mx');
+          panel.style.removeProperty('--my');
+        });
+      }
+    }
+  </script>
 </body>
 </html>
