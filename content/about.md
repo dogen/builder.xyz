@@ -14,6 +14,8 @@ Building an ai-native tool for royalty ownership recovery, Bakken division order
 
 The work happens at the intersection of software, systems, and daily practice — building things that work, fixing things that don't, and learning from both.
 
+I'm also very into the writings and ideas of Jung. I recently completed a course at the [McMillan Institute for Jungian Studies](https://www.junghouston.org/jungian-studies#UpcomingEvents) on the Puer Aeternus.
+
 ## Influence me with
 
 - Systems thinking
