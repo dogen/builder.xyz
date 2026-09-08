@@ -17,6 +17,7 @@ cp static-pages/landing.css public/
 mkdir -p public/pro
 cp static-pages/pro/index.html public/pro/
 cp static-pages/pro/style.css public/pro/
+cp static-pages/pro/portrait.jpg public/pro/
 
 # Note: Quartz's content/index.md outputs to public/index.html
 # but gets overwritten by our landing page.
