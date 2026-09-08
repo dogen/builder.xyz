@@ -5,6 +5,8 @@ description: "Personal notes, reading, tinkering, and things I find interesting"
 
 # The Workshop
 
+![[rammed-earth.png|On the rammed-earth build, Marfa]]
+
 **A place for what I'm thinking about, reading, and tinkering on.**
 
 Not the professional side. This is the raspberry pi, the two-stroke engines, the mezcal, the earthen building materials, the cybersecurity rabbit holes, the financial market musings that don't fit in a LinkedIn profile.
