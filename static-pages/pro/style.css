@@ -59,6 +59,23 @@ a:hover { color: var(--neon-y); }
 /* ---------- header ---------- */
 .header { margin-bottom: 14px; }
 
+.header__row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__portrait {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  border: 1px solid var(--hair);
+}
+
+.header__text { min-width: 0; }
+
 .header__name {
   font-family: var(--serif);
   font-weight: 500;
@@ -271,6 +288,17 @@ a:hover { color: var(--neon-y); }
   flex-wrap: wrap;
   gap: 8px 18px;
 }
+.footer a { color: var(--ink-3); }
+.footer a:hover { color: var(--neon-y); }
+
+/* deliberately de-emphasized — smaller, dimmer, pushed to the end */
+.footer__linkedin {
+  font-size: 9px;
+  color: rgba(236, 233, 226, 0.28);
+  margin-left: auto;
+  letter-spacing: 0.04em;
+}
+.footer__linkedin:hover { color: var(--ink-3); }
 
 /* ---------- one authored entrance; default state is visible ---------- */
 @media (prefers-reduced-motion: no-preference) {
@@ -292,6 +320,8 @@ a:hover { color: var(--neon-y); }
 /* ---------- responsive ---------- */
 @media (max-width: 620px) {
   .container { padding: 40px 22px 72px; }
+  .header__portrait { width: 64px; height: 64px; }
+  .footer__linkedin { margin-left: 0; }
   .role__dates, .edu__when { margin-left: 0; width: 100%; }
   .role__demo, .role__points { margin-left: 0; padding-left: 0; }
   .role__points { padding-left: 0; }
